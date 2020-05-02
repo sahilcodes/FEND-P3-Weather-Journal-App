@@ -2,6 +2,8 @@
 Udacity - Project 3<br>
 HTML, CSS, JavaScript, Node.js, Express.js, API
 
+Live server : [HERE] (https://fend-p3-weather-app.herokuapp.com/)
+
 ## Project requirements
 
 1. Install Node.js and Express.js
