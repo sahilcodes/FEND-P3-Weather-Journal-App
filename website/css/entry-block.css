@@ -1,0 +1,28 @@
+input, textarea, button {
+    width: 100%;
+    border: 1px solid #00b698;
+    border-radius: 6px;
+    padding: 5px 10px;
+    margin-bottom: 1.2em;
+}
+
+input, button {
+    height: 40px
+}
+
+input.err {
+    border: 1px solid #4cbbb9;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button.btn {
+    background-color: #4cbbb9;
+    border-color: #4cbbb9;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+}
