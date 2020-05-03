@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/sahilcodes/FEND-P3-Weather-Journal-App#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1"
   }

@@ -6,7 +6,9 @@ const cors = require('cors');
 /* Declare Variables*/
 const port = process.env.PORT || 3000;
 const app = express();
-const projectData = [];
+let projectData = {};
+
+projectData = [];
 
 /* General Configs */
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -29,6 +31,9 @@ app.get('/getRecords', (req, res) => {
 
 
 /* POST Request => Add/Register a Record to the Journal(projectData) */
+
+
+
 app.post('/addRecord', (req, res) => {
     let dataObject = {}
     dataObject.date = req.body.date;

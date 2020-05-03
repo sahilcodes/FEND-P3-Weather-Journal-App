@@ -67,15 +67,15 @@ const postJournalRecord = async (url = '', data = {}) => {
 /* Add the Journal Data to the Page (Update UI) */
 const updateUI = (items) => {
   let htmlData = items.map((item => {
-        return `<div class="journal-record">
+        return `<div id="entryHolder" class="journal-record">
                   <span class="label">Date:</span>
-                  <div class="jr-date">${item.date}</div>
+                  <div id="date" class="jr-date">${item.date}</div>
                   
                   <span class="label">Temperature:</span>
-                  <div data-kelvins='${item.temp}' class="jr-temp">${convertDegrees(item.temp)}</div>
+                  <div id="temp" data-kelvins='${item.temp}' class="jr-temp">${convertDegrees(item.temp)}</div>
                   
                   <span class="label">Description:</span>
-                  <div class="jr-content">${item.content}</div>
+                  <div id="content" class="jr-content">${item.content}</div>
                 </div>`;
   })).join(" ");
 
